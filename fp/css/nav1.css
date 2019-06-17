@@ -1,0 +1,178 @@
+:root {
+
+    --background-color: white;
+    --strongtext-color: black;
+    --normaltext-color: black;
+    --clickedtext-color: #ed254e;
+}
+
+body {
+    margin: 0;
+}
+.active{
+/*
+    border: 3px solid white;
+    padding: 5px;
+*/
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    background: var(--strongtext-color);
+    z-index: 99;
+    
+
+}
+
+.logo{
+    margin: 0;
+    font-size: 1.6em;
+    letter-spacing: 0.3em;
+    word-spacing: 0.5em;
+    font-weight: 900;
+    color: white;
+    
+    
+    
+}
+
+
+
+
+
+.logo-sublogo p {
+    font-size: .8em;
+    color: white;
+    margin-bottom: .5em;
+    margin-top: .2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after{
+    display: block;
+    background: var(--background-color);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;   
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--strongtext-color);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 125ms ease-in-out;  
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+    
+}
+
+@media only screen and (min-width : 1224px){
+    .nav-toggle-label{
+        display: none;
+    }
+    
+    header {    
+        position: relative;
+        display:grid;
+        grid-template-columns: minmax(250px, 1fr) auto minmax(600px, 1fr), 1fr;
+        padding: .8em
+    }
+    
+    .logo-sublogo {
+        grid-column: 1 / 3;
+        justify-content: center;
+        align-content: center;
+    }
+    nav {
+        all: unset;
+        grid-column: 3/5;
+        align-self: flex-end;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    
+    }
+    
+    nav li{
+        margin-left: 3em;
+        vertical-align: middle;
+    
+    }
+    nav a::before{
+        display: block;
+    }
+    .logo {
+        font-size: 2.5em;
+    }
+}

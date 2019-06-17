@@ -8,17 +8,40 @@
     <link rel="stylesheet" href="css/main-header-menu.css">
     <link rel="stylesheet" href="css/fp.css">
     <link rel="stylesheet" href="../css/form.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/nav1.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="js/ajSlider.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet"/>
     
 </head>
 
 
 
 <body>
-    <!-- COPY \/ -->
+    
+    
+        <header>
+        <div class="logo-sublogo">
+            <a href="index.php"><h1 class="logo">ARTSUL</h1></a>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <nav>
+            <ul>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="galery.php">Galery</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+<!--
     <header class="main-header">
         <div class="container">
             
@@ -50,4 +73,5 @@
         </div>
     
     </header>
+-->
     

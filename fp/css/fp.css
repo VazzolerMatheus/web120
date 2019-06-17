@@ -146,14 +146,16 @@ footer{
     margin: auto;
     
 }
-
+.address-footer p{
+    font-size: 1.5em;
+}
 .followus-footer{
 
     grid-column-start: span 1;
 }
 
 .followus-footer img {
-    max-width:20%;
+    max-width:25%;
     display:inline-block; 
     width: 15%;
 }
@@ -182,6 +184,21 @@ footer{
     max-width: 100px;
 }
 
+/*GALERY STYLING*/
+
+.galery-grid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+figure img{
+    display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
 @media (min-width: 1281px) {
     
     .container1{
@@ -190,7 +207,7 @@ footer{
   
     .address-footer p{
 
-    font-size: 1.8em;
+    font-size: 1.2em;
     }
     
     
@@ -232,6 +249,11 @@ footer{
     margin: auto;
 } 
     
+.galery-grid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
     
 }
 
