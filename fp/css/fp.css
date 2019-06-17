@@ -1,0 +1,238 @@
+
+
+/*
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+}
+
+.page1-biglogo { 
+	grid-column: 1 / 8;
+  	grid-row: 2;
+}
+*/
+
+.title {
+    font-weight: 900;
+    font-size: 3em;
+    padding-top: 90px;
+    margin: auto;
+    width: 50%;
+}
+html body{
+    background: #B2AFAC;
+    font-family: 'Amatic SC', cursive;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.container1{
+    height: 30em;
+    position: relative;
+}
+.container1 h1{
+    display: inline-block;
+    background: white;
+    font-size: 5em;
+    letter-spacing: 12px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+.iframe{
+    display:block;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+}
+.center{
+    text-align: center
+}
+
+.center p{
+    font-size: 3em;
+}
+.recap {
+
+    margin: auto;
+    width: 50%;
+}
+.text{
+    padding-top: 100px;
+}
+.text p{
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+
+
+
+
+    /*START MAIN PAGE*/
+
+.container1{
+    background-image:url("../images/bg2.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    z-index: -999;
+}
+.ourArtists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.ourArtists h2{
+    grid-column-start: span 2;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin-bottom: 3%;
+    display: inline-block;
+
+    
+}
+
+.ourArtists img {
+    border-radius: 50%;
+    width: 70%;
+    height: auto;
+}
+
+.ourArtists p {
+    background: white;
+    margin: auto;
+    max-width: 70%;
+    padding: 1em;
+    word-spacing: 0.5em;
+    margin-bottom: 10%;
+    font-size: 100%;
+}
+
+.ourArtists h3{
+    font-weight: 900;
+    font-size: 250%;
+}
+
+
+
+
+
+    /*START FOOTER*/
+
+footer{
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: 8em;
+}
+
+.logo-footer, .address-footer, .followus-footer, .ourArtists{
+    text-align: center;
+    margin: auto;
+    
+}
+
+.followus-footer{
+
+    grid-column-start: span 1;
+}
+
+.followus-footer img {
+    max-width:20%;
+    display:inline-block; 
+    width: 15%;
+}
+
+
+
+
+.disclaimer-footer{
+    background: black;
+    text-align: center;
+    font-size: 1em;
+    grid-column:  span 2;
+    display: inline-block;
+}
+
+.disclaimer-footer a:link{
+    text-decoration: none;
+}
+
+/*END FOOTER*/
+
+
+/*iframe*/
+
+.blockquote {
+    max-width: 100px;
+}
+
+@media (min-width: 1281px) {
+    
+    .container1{
+    background-image:url("../images/bg.jpg");
+}
+  
+    .address-footer p{
+
+    font-size: 1.8em;
+    }
+    
+    
+/*START MAIN PAGE*/    
+    .ourArtists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .ourArtists h2{
+    grid-column-start: span 4;
+    }
+    
+    
+    .ourArtists p {
+
+    font-size: 120%;
+        
+}
+    
+    .title {
+
+    font-size: 5em;
+    }
+    
+.text p{
+    font-size: 2em;
+    margin-bottom: 0.8em;
+}
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+/*END MAIN PAGE*/
+    }
+.disclaimer-footer{
+    vertical-align: text-bottom;
+    font-size: 1.5em;
+    grid-column:  span 1;
+    display: inline-block;
+    margin: auto;
+} 
+    
+    
+}
+
+

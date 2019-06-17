@@ -20,7 +20,7 @@
   <h1><a href="index.php"><i class="logo fa fa-home"></i> Matheus Vazzoler's SCC WEB120 Portal</a></h1>
   <nav>
     <ul class="topnav" id="myTopnav">
-      <li><a href="index.php" class="selected">Welcome</a></li>
+      <li><a href="gif.php" class="selected">Welcome</a></li>
       <li><a href="big/index.php">Big</a></li>
       <li><a href="aia.php">AIA</a></li>
       <li><a href="flowchart.php">Flowchart</a></li>

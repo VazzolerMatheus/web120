@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * simple.php is a postback application designed to provide a 
  * contact form for users to email our clients.  
